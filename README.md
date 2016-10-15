@@ -1,19 +1,17 @@
 # getstorybook
 
-Easiest way to add [Storybook](https://github.com/kadirahq/react-storybook) support to your project.
+Easiest way to add [SB](https://github.com/ui-storybook/sb) to your project.
 
-![](docs/getstorybook.png)
-
-First install the storybook generator globally.
+Install sb-cli globally.
 
 ```
-npm i -g getstorybook
+npm i -g sb-cli
 ```
 
 Then go to your project and run:
 
 ```
-getstorybook
+sb-create
 ```
 
 That's all you've to do.
@@ -22,23 +20,23 @@ That's all you've to do.
 
 ## Yarn support
 
-getstorybook also supports yarn. If you are using yarn, this is how to use it:
+sb-cli also supports yarn. If you are using yarn, this is how to use it:
 
 ```
-yarn global add getstorybook
-getstorybook --use-yarn
+yarn global add sb-cli
+sb-create --use-yarn
 ```
 
-`getstorybook` will identify it's installed with yarn and it'll use yarn to install deps.
+`sb-create` will identify it's installed with yarn and it'll use yarn to install deps.
 
 > This is the way, if you wanna use yarn for all of your storybook projects.
 
 If that's not the case, you can do this:
 
 ```
-npm i -g getstorybook
+npm i -g sb-cli
 getstorybook --use-yarn
 
 ```
 
-For more information, refer [React Storybook](https://github.com/kadirahq/react-storybook) documentation.
+For more information, refer [SB](https://github.com/ui-storybook/sb) documentation.
