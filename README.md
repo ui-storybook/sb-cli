@@ -1,4 +1,4 @@
-# getstorybook
+# sb-cli
 
 Easiest way to add [SB](https://github.com/ui-storybook/sb) to your project.
 
