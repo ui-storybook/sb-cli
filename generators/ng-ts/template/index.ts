@@ -14,6 +14,12 @@ const mainModule = angular.module('sb', [
   'helper'
 ]);
 
+// If we have old app remove it
+let oldAll: Element = document.getElementsByTagName('preview-helper')[0];
+if (oldAll) {
+  oldAll.remove();
+}
+
 let preview: HTMLElement = document.createElement('preview-helper');
 document.body.appendChild(preview);
 
