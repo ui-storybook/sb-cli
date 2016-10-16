@@ -7,7 +7,7 @@ mergeDirs(path.resolve(__dirname, 'template/'), 'sb', 'overwrite');
 var packageJson = helpers.getPackageJson();
 
 packageJson.devDependencies = packageJson.devDependencies || {};
-packageJson.devDependencies['ui-storybook'] = '^0.1.2';
+packageJson.devDependencies['ui-storybook'] = '^0.1.6';
 packageJson.devDependencies['ng-annotate-webpack-plugin'] = '0.1.3';
 packageJson.devDependencies['ng-annotate-loader'] = '0.0.10';
 
