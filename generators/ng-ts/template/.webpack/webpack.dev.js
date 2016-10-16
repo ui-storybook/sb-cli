@@ -18,7 +18,7 @@ module.exports = {
     resolveLoader: {
         modulesDirectories: ["node_modules"]
     },
-    devtool: "source-map",
+    // devtool: "source-map",
     plugins: [
         new CopyWebpackPlugin([
             { from: './sb/static/preview.html', to: 'preview.html' },
