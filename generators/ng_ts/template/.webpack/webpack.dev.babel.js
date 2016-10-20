@@ -1,15 +1,22 @@
 var loaders = require("./loaders");
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
+var path = require('path');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+
 module.exports = {
     entry: {
-        app: './sb/index.ts',
+        app: [
+            'webpack/hot/dev-server',
+            'webpack-hot-middleware/client?noInfo=true',
+            './sb/index.ts'
+        ],
         stories: './sb/stories'
     },
     output: {
         filename: '[name].js',
-        path: 'sb-dist'
+        path: path.join(__dirname, 'sb-dist'),
+        publicPath: '/'
     },
     resolve: {
         root: __dirname,
@@ -24,16 +31,10 @@ module.exports = {
             { from: './sb/static/preview.html', to: 'preview.html' },
             { from: './sb/static/index.html', to: 'index.html' }
         ]),
-        new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 8080,
-            server: {
-                baseDir: 'sb-dist'
-            },
-            ui: false,
-            online: false,
-            notify: false
-        })
+        new ngAnnotatePlugin({
+            add: true
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         loaders: loaders
