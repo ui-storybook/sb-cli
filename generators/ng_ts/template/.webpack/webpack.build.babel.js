@@ -5,7 +5,7 @@ var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ['./sb/index.js'],
+        app: ['./sb/index.ts'],
         stories: './sb/stories'
     },
     output: {
@@ -27,7 +27,7 @@ module.exports = {
             { from: './sb/.static/index.html', to: 'index.html' }
         ]),
         new ngAnnotatePlugin({
-            add: true 
+            add: true
         }),
         new webpack.NoErrorsPlugin(),
         new webpack.optimize.DedupePlugin(),

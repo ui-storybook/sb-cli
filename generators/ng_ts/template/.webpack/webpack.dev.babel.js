@@ -28,8 +28,8 @@ module.exports = {
     // devtool: "source-map",
     plugins: [
         new CopyWebpackPlugin([
-            { from: './sb/static/preview.html', to: 'preview.html' },
-            { from: './sb/static/index.html', to: 'index.html' }
+            { from: './sb/.static/preview.html', to: 'preview.html' },
+            { from: './sb/.static/index.html', to: 'index.html' }
         ]),
         new ngAnnotatePlugin({
             add: true

@@ -11,6 +11,7 @@ packageJson.devDependencies['ui-storybook'] = '^1.0.2';
 packageJson.devDependencies['ng-annotate-loader'] = '0.0.10';
 packageJson.devDependencies['ts-loader'] = '0.8.2';
 packageJson.devDependencies['ng-annotate-webpack-plugin'] = '0.1.3';
+packageJson.devDependencies['webpack-hot-middleware'] = '2.13.0';
 
 packageJson.scripts = packageJson.scripts || {};
 packageJson.scripts['sb'] = 'node ./sb/.webpack/server.js --NODE_ENV=dev';
