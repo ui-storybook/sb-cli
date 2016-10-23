@@ -7,6 +7,7 @@ if (module.hot) {
   module.hot.accept();
 }
 
+// Import your app here and then add it to the module below
 const mainModule = angular.module('sb', [
   'helper'
 ]);
