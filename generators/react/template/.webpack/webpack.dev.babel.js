@@ -31,7 +31,16 @@ module.exports = {
             { from: './sb/.static/preview.html', to: 'preview.html' },
             { from: './sb/.static/index.html', to: 'index.html' }
         ]),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+
+        // Tell SB witch framework you use insede
+        // Feature like live template and model editing avaliable onle for angular now
+        // SB will turn off them to prevent crashes
+        new webpack.DefinePlugin({
+            'process.env': {
+                'TYPE': 'react',
+            }
+        })
     ],
     module: {
         loaders: loaders
