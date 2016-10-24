@@ -7,7 +7,7 @@ mergeDirs(path.resolve(__dirname, 'template/'), 'sb', 'overwrite');
 var packageJson = helpers.getPackageJson();
 
 packageJson.devDependencies = packageJson.devDependencies || {};
-packageJson.devDependencies['ui-storybook'] = '^1.0.4';
+packageJson.devDependencies['ui-storybook'] = '^1.0.5';
 packageJson.devDependencies['sb-react-helper'] = '^0.1.0';
 packageJson.devDependencies['webpack-hot-middleware'] = '2.13.0';
 packageJson.devDependencies['babel-preset-react'] = '2.13.0';
