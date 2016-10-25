@@ -36,15 +36,6 @@ module.exports = {
                 warnings: false
             },
             mangle: false
-        }),
-        
-        // Tell SB witch framework you use insede
-        // Feature like live template and model editing avaliable onle for angular now
-        // SB will turn off for them to prevent crashes
-        new webpack.DefinePlugin({
-            'process.env': {
-                'TYPE': 'angular',
-            }
         })
     ],
     module: {

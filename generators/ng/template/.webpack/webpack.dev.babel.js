@@ -34,16 +34,7 @@ module.exports = {
         new ngAnnotatePlugin({
             add: true
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        
-        // Tell SB witch framework you use insede
-        // Feature like live template and model editing avaliable onle for angular now
-        // SB will turn off for them to prevent crashes
-        new webpack.DefinePlugin({
-            'process.env': {
-                'TYPE': 'angular',
-            }
-        })
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         loaders: loaders
