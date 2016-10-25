@@ -8,9 +8,9 @@ var packageJson = helpers.getPackageJson();
 
 packageJson.devDependencies = packageJson.devDependencies || {};
 packageJson.devDependencies['ui-storybook'] = '^1.0.5';
-packageJson.devDependencies['sb-react-helper'] = '^0.1.0';
+packageJson.devDependencies['sb-react-helper'] = '^0.1.1';
 packageJson.devDependencies['webpack-hot-middleware'] = '2.13.0';
-packageJson.devDependencies['babel-preset-react'] = '2.13.0';
+packageJson.devDependencies['babel-preset-react'] = '6.16.0';
 
 packageJson.scripts = packageJson.scripts || {};
 packageJson.scripts['sb'] = 'node ./sb/.webpack/server.js --NODE_ENV=dev';
