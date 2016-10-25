@@ -1,7 +1,7 @@
 {
   "name": "sb-cli",
   "author": "freeman14",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easiest way to add SB to your project.",
   "bin": {
     "sb-create": "./bin/generate.js"
