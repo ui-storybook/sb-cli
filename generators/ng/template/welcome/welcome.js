@@ -1,6 +1,6 @@
 import './welcome.css';
 
-let module = angualar.module('welcome');
+let module = angualar.module('welcome', []);
 
 module.component('sbWelcome', {
   template: `<div class="welcome__card">
