@@ -80,20 +80,21 @@ switch (projectType) {
     codeLog([runStorybookCommand]);
     logger.log('\nFor more information visit:', chalk.cyan('https://github.com/ui-storybook/sb'));
     break;
-  case types.react:
-    done = commandLog('Adding SB support to your "React App" project');
-    require('../generators/react');
-    done();
 
-    installDeps(npmOptions);
+  // case types.react:
+  //   done = commandLog('Adding SB support to your "React App" project');
+  //   require('../generators/react');
+  //   done();
 
-    logger.log('\nTo run your SB, type:\n');
-    codeLog([runStorybookCommand]);
-    logger.log('\nFor more information visit:', chalk.cyan('https://github.com/ui-storybook/sb'));
-    break;
+  //   installDeps(npmOptions);
+
+  //   logger.log('\nTo run your SB, type:\n');
+  //   codeLog([runStorybookCommand]);
+  //   logger.log('\nFor more information visit:', chalk.cyan('https://github.com/ui-storybook/sb'));
+  //   break;
 
   default:
-    paddedLog('Unsupported Project type. [code: ' + projectType.toUpperCase() + ']. For now SB support only Angular 1.* projects.');
+    paddedLog('Unsupported Project type. [code: ' + projectType.toUpperCase() + ']. For now SB support only Angular 1 projects.');
     paddedLog('If you want to start from scratch use boilerplate https://github.com/ui-storybook/sb-angular-boilerplate');
     paddedLog('Visit https://github.com/ui-storybook/sb for more information.');
 }
