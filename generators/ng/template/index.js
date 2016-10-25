@@ -2,7 +2,7 @@ import * as angular from 'angular';
 import 'ui-storybook/helpers/ng';
 
 // Demo module. Remove this.
-import welcome from './welcome/welcome.js';
+import welcome from './welcome/welcome';
 
 // Support for hot module reload
 // Remove this to turn off auto reload
