@@ -3,6 +3,9 @@
 import * as angular from 'angular';
 import 'ui-storybook/helpers/ng';
 
+// Demo module. Remove this.
+import welcome from './welcome/welcome.js';
+
 // Support for hot module reload
 // Remove this to turn off auto reload
 if (module.hot) {
@@ -11,7 +14,8 @@ if (module.hot) {
 
 // Import your app here and then add it to the module below 
 const mainModule = angular.module('sb', [
-  'helper'
+  'helper',
+  'welcome'
 ]);
 
 // If we have old app remove it

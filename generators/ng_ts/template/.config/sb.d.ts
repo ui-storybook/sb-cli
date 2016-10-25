@@ -32,7 +32,7 @@ declare namespace stotybook {
         add(
             title: string, 
             template: string, 
-            model: Object ): IStory;
+            model?: Object ): IStory;
     }
 
 }
