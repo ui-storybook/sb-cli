@@ -2,7 +2,6 @@ var loaders = require("./loaders");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 var path = require('path');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -31,9 +30,6 @@ module.exports = {
             { from: './sb/.static/preview.html', to: 'preview.html' },
             { from: './sb/.static/index.html', to: 'index.html' }
         ]),
-        new ngAnnotatePlugin({
-            add: true
-        }),
         new webpack.HotModuleReplacementPlugin()
     ],
     module: {
