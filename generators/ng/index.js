@@ -8,7 +8,6 @@ var packageJson = helpers.getPackageJson();
 
 packageJson.devDependencies = packageJson.devDependencies || {};
 packageJson.devDependencies['ui-storybook'] = '^1.0.5';
-packageJson.devDependencies['ng-annotate-webpack-plugin'] = '0.1.3';
 packageJson.devDependencies['ng-annotate-loader'] = '0.0.10';
 packageJson.devDependencies['webpack-hot-middleware'] = '2.13.0';
 

@@ -1,7 +1,6 @@
 var loaders = require("./loaders");
 var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
     entry: {
