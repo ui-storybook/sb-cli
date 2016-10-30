@@ -10,7 +10,11 @@ module.exports = {
             'webpack-hot-middleware/client?noInfo=true',
             './sb/index.js'
         ],
-        stories: './sb/stories'
+        stories: [
+            'webpack/hot/dev-server',
+            'webpack-hot-middleware/client?noInfo=true',
+            './sb/stories'
+        ]
     },
     output: {
         filename: '[name].js',
